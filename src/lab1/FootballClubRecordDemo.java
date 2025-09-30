@@ -1,6 +1,9 @@
+package lab1;
+
 import java.util.*;
 
-record BestPlayerRecord(String name)  implements Comparable<BestPlayerRecord> {
+record BestPlayerRecord(String name) implements Comparable<BestPlayerRecord>
+{
     @Override
     public int compareTo(BestPlayerRecord other)
     {
@@ -8,7 +11,8 @@ record BestPlayerRecord(String name)  implements Comparable<BestPlayerRecord> {
     }
 }
 
-record FootballClubRecord(String name, Integer numberOfGames, BestPlayerRecord bestPlayer) implements Comparable<FootballClubRecord>
+record FootballClubRecord(String name, Integer numberOfGames, BestPlayerRecord bestPlayer)
+        implements Comparable<FootballClubRecord>
 {
     FootballClubRecord(String name, Integer numberOfGames, BestPlayerRecord bestPlayer)
     {

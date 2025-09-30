@@ -1,3 +1,6 @@
+import lab1.FootballClubDemo;
+import lab1.FootballClubRecordDemo;
+
 public class Labs
 {
     static void runTask(String taskNumber, Runnable method)

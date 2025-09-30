@@ -1,3 +1,5 @@
+package lab1;
+
 import java.util.*;
 
 class BestPlayer implements Comparable<BestPlayer>
