@@ -1,5 +1,5 @@
-import lab1.FootballClubDemo;
-import lab1.FootballClubRecordDemo;
+import lab1.Task1;
+import lab1.Task2;
 
 public class Labs
 {
@@ -15,12 +15,13 @@ public class Labs
     {
         switch (number) {
             case 1:
-                runTask("1.2", FootballClubDemo::task12);
-                runTask("1.3", FootballClubRecordDemo::task13);
+                runTask("1.2", Task1::task12);
+                runTask("1.3", Task1::task13);
+                runTask("2.3", Task2::task23);
             case 2:
-                System.out.println("2 лабы пока нет");
+                System.out.println("\n================\n2 лабы пока нет\n================\n");
             default:
-                System.out.println("Конец выполнения");
+                System.out.println("\n================\nКонец выполнения\n================\n");
         }
     }
 }
