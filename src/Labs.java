@@ -1,5 +1,5 @@
-import lab1.Task1;
-import lab1.Task2;
+import lab1.*;
+import lab2.*;
 
 public class Labs
 {
@@ -15,11 +15,12 @@ public class Labs
     {
         switch (number) {
             case 1:
-                runTask("1.2", Task1::task12);
-                runTask("1.3", Task1::task13);
-                runTask("2.3", Task2::task23);
+                runTask("1.2", Lab1Task1::task12);
+                runTask("1.3", Lab1Task1::task13);
+                runTask("2.3", Lab1Task2::task23);
             case 2:
-                System.out.println("\n================\n2 лабы пока нет\n================\n");
+                runTask("2.1", Lab2Task1::run);
+                runTask("2.2", Lab2Task2::run);
             default:
                 System.out.println("\n================\nКонец выполнения\n================\n");
         }

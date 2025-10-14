@@ -1,7 +1,8 @@
+import java.io.IOException;
+
 public class Main
 {
-    public static void main(String[] args)
-    {
-        Labs.runLab(1);
+    public static void main(String[] args) {
+        Labs.runLab(2);
     }
 }

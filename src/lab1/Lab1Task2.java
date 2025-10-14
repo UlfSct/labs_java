@@ -92,7 +92,7 @@ class Demo <T extends Number>
     }
 }
 
-public class Task2
+public class Lab1Task2
 {
     public static void task23()
     {

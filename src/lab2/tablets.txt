@@ -1,0 +1,11 @@
+ID	Наименование	Бренд	Цвет	Диагональ	Цена за 1 шт., руб	Оценка покупателей
+1	Samsung Galaxy Tab A 10.1	Samsung	золотистый	10,1	13799	4,8
+2	Huawei Matepad 64 ГБ	Huawei	серый	10,4	22999	4,7
+3	Samsung Galaxy Tab S6 Lite	Samsung	голубой	10,4	26999	4,8
+4	Apple iPad 2020	Apple	серебристый	10,2	29999	5
+5	Huawei Matepad Pro MRX-AL09	Huawei	серый	10,8	41999	4,8
+6	Samsung Galaxy Tab Active	Samsung	черный	8	44999	5
+7	Apple iPad mini 2019 	Apple	серебристый	7,9	44999	4,8
+8	Samsung Galaxy Tab S7	Samsung	коричневый	11	52499	4,8
+9	Lenovo Tab P11 Pro TB-J706L	Lenovo	серый	11,5	54999	4,6
+10	Apple iPad Air 2020	Apple	голубой	10,9	67999	5
