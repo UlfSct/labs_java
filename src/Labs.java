@@ -1,5 +1,7 @@
 import lab1.*;
 import lab2.*;
+import lab3.*;
+
 
 public class Labs
 {
@@ -21,8 +23,9 @@ public class Labs
             case 2:
                 runTask("2.1", Lab2Task1::run);
                 runTask("2.2", Lab2Task2::run);
-            default:
-                System.out.println("\n================\nКонец выполнения\n================\n");
+            case 3:
+                // runTask("3.1", Lab3Task1::run);
+                runTask("3.2", Lab3Task2::run);
         }
     }
 }
