@@ -1,10 +1,7 @@
 package lab3;
 
-import lombok.Getter;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -51,8 +48,10 @@ record Task(
             if (athleteNumber == 1) finishLatch.countDown();
             else
             {
-                synchronized (Task.class) {
-                    if (winner == null) {
+                synchronized (Task.class)
+                {
+                    if (winner == null)
+                    {
                         winner = teamName;
                     }
                 }
@@ -111,7 +110,9 @@ class RelayRace {
 
             String winner = Task.getWinner();
             if (winner != null) System.out.println("\n\nПОБЕДИТЕЛЬ: " + winner);
-        } catch (InterruptedException e) {
+        }
+        catch (InterruptedException e)
+        {
             throw new RuntimeException(e);
         }
     }
