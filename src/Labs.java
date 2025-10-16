@@ -1,6 +1,10 @@
 import lab1.*;
 import lab2.*;
 import lab3.*;
+import lab4.Shop;
+import lab4.ShopFactory;
+
+import java.util.List;
 
 
 public class Labs
@@ -24,8 +28,13 @@ public class Labs
                 runTask("2.1", Lab2Task1::run);
                 runTask("2.2", Lab2Task2::run);
             case 3:
-                // runTask("3.1", Lab3Task1::run);
+                runTask("3.1", Lab3Task1::run);
                 runTask("3.2", Lab3Task2::run);
+            case 4:
+                List<String> itemNames = List.of("Стол", "Шкаф", "Кресло", "Кухня", "Диван", "Кровать");
+                ShopFactory factory = new ShopFactory();
+                Shop shop = factory.createShop(itemNames);
+                runTask("4", shop::run);
         }
     }
 }

@@ -66,7 +66,8 @@ record Task(
     }
 }
 
-class RelayRace {
+class RelayRace
+{
     private static final String firstTeamName = "Альфа";
     private static final String secondTeamName = "Браво";
     private static final double maxAthleteSpeed = 10.0;
