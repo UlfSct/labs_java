@@ -18,4 +18,12 @@ public class GlobalExceptionHandler
         errorResponse.put("id", ex.getMessage());
         return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
     }
+
+    @ExceptionHandler(InvalidQueryPathException.class)
+    public ResponseEntity<?> handleInvalidQueryPath(InvalidQueryPathException ex)
+    {
+        Map<String, String> errorResponse = new HashMap<>();
+        errorResponse.put("path", ex.getMessage());
+        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
+    }
 }
