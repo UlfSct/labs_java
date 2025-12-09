@@ -1,7 +1,9 @@
 package com.example.booklibrary.exception;
 
-public class InvalidQueryPathException extends RuntimeException {
-    public InvalidQueryPathException() {
+public class InvalidQueryPathException extends RuntimeException
+{
+    public InvalidQueryPathException()
+    {
         super("Некорректный путь запроса");
     }
 }

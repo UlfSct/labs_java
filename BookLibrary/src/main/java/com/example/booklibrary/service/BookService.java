@@ -9,7 +9,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class BookService {
+public class BookService
+{
     private final BookRepository repository;
 
     @Autowired
@@ -18,11 +19,13 @@ public class BookService {
         this.repository = bookRepository;
     }
 
-    public List<Book> getAllBooks() {
+    public List<Book> getAllBooks()
+    {
         return repository.getAllBooks();
     }
 
-    public Book getBookById(Integer id) {
+    public Book getBookById(Integer id)
+    {
         return repository.getBookById(id).orElseThrow(() -> new BookNotFoundException(id));
     }
 

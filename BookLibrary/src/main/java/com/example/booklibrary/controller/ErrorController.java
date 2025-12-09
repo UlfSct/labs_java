@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ErrorController
 {
     @GetMapping("/error")
-    public String error() {
+    public String error()
+    {
         throw new InvalidQueryPathException();
     }
 }

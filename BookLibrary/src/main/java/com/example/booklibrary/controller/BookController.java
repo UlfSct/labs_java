@@ -10,31 +10,37 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/books")
-public class BookController {
+public class BookController
+{
     private final BookService service;
 
     @Autowired
-    public BookController(BookService service) {
+    public BookController(BookService service)
+    {
         this.service = service;
     }
 
     @PostMapping
-    public ResponseEntity<?> createBook(@RequestBody Book book) {
+    public ResponseEntity<?> createBook(@RequestBody Book book)
+    {
         return new ResponseEntity<>(service.createBook(book), HttpStatus.CREATED);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> retrieveBook(@PathVariable Integer id) {
+    public ResponseEntity<?> retrieveBook(@PathVariable Integer id)
+    {
         return new ResponseEntity<>(service.getBookById(id), HttpStatus.OK);
     }
 
     @GetMapping
-    public ResponseEntity<?> retrieveBooks() {
+    public ResponseEntity<?> retrieveBooks()
+    {
         return new ResponseEntity<>(service.getAllBooks(), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteBook(@PathVariable Integer id) {
+    public ResponseEntity<?> deleteBook(@PathVariable Integer id)
+    {
         return new ResponseEntity<>(service.deleteBookById(id), HttpStatus.OK);
     }
 }

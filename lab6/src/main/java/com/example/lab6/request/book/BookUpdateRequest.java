@@ -1,4 +1,4 @@
-package com.example.booklibrary.model;
+package com.example.lab6.request.book;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,10 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Book
-{
-    private Integer id;
+public class BookUpdateRequest {
     private String title;
-    private String author;
     private Integer year;
+    private Integer authorId;
+    private String isbn;
 }
